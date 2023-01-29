@@ -1,0 +1,138 @@
+
+
+
+
+
+:root {
+    --head-color: #764134;
+    --main: #CA054D;
+    --bg: #FCFCFC;
+}
+body {
+    background-color: var(--bg);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    background: var(--head-color);
+    border-radius: 10px;
+    color: beige;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+header h2 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+nav a {
+    text-decoration: none;
+    color: bisque;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+nav a:hover {
+    color: var(--main);
+    background-color: antiquewhite;
+    border-radius: 20px;
+}
+.home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+}
+.home h1, h2, p {
+   font-size: 2rem;
+   width: 50%;
+   
+    
+
+    
+}
+.home img {
+    float: right;
+    margin-top: 0;
+    border-radius: 5px;
+}
+
+.about {
+    background-image: url(/images/room.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about h2 {
+    color: #CA054D;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.about p {
+    color: var(--bg);
+    line-height: 40px;
+}
+.services {
+    text-transform: capitalize;
+
+}
+.services h3 {
+    text-align: center;
+    font-size: 2rem;
+}
+.style {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.services ul li {
+    font-weight: bold;
+    text-align: start;
+    list-style: none;
+    font-size: 1.5rem;
+    height: 20vh;
+}
+.services img {
+    float: right;
+}
+.media {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.contacts {
+    padding: 10px;
+}
+.contacts h3 {
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+footer {
+    background: #764134;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 0;
+}
+footer h4 {
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 481px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .home {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
